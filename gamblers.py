@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Gamblers Ruin with a Markov Matrix
 # Written by Oren Klopfer
 # Link: https://github.com/oklopfer/ruin/gamblers.py
