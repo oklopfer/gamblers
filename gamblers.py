@@ -171,6 +171,6 @@ if __name__ == '__main__':
     multiprocessing.set_start_method('spawn')
     print("""Gamblers Ruin with Markov Matrices
 Written by Oren Klopfer (oklopfer)
-Link: https://github.com/oklopfer/ruin/gamblers.py
+Link: https://github.com/oklopfer/ruin/blob/master/gamblers.py
     """)
     game_prompt() if 'COLAB_GPU' in os.environ else game_prompt(*sys.argv[1:])
