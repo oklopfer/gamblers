@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-# Gamblers Ruin with a Markov Matrix
-# Written by Oren Klopfer
-# Link: https://github.com/oklopfer/ruin/gamblers.py
-
 import numpy as np
 import random
 import sys
@@ -171,6 +167,10 @@ def game_prompt(*args):
         rand_avg_plays(gamblers_limits, int(game_args[6]), int(game_args[0]), int(game_args[1]), int(game_args[2]), int(game_args[3]), int(game_args[4]), int(game_args[5]))
 
 if __name__ == '__main__':
-    #import multiprocessing
-    #multiprocessing.set_start_method('spawn')
+    import multiprocessing
+    multiprocessing.set_start_method('spawn')
+    print("""Gamblers Ruin with Markov Matrices
+Written by Oren Klopfer (oklopfer)
+Link: https://github.com/oklopfer/ruin/gamblers.py
+    """)
     game_prompt() if 'COLAB_GPU' in os.environ else game_prompt(*sys.argv[1:])
